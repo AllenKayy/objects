@@ -56,3 +56,45 @@ console.log(musaJambScores);
 
 musa.jambScores = musaJambScores
 console.log(musa)
+
+// question 4
+
+// using the spread operator (ES6)
+
+const obj1 = {
+    name: "Fikun",
+    school: "Deakin University",
+    dept: "Statistics and Computing"
+};
+let  clone = { ...obj1 };
+console.log(clone);
+
+// using the Object.assign() method
+
+const obj2 = {
+    name: "Oma",
+    school: "st. Gregory College",
+    dept: "Accounting"
+};
+clone = Object.assign({}, obj2);
+console.log(clone); 
+
+// using JSON.parse() and JSON.stringify()
+
+const obj3 = {
+    name: "Fola",
+    school: "Imperial College",
+    dept: "Biomedical Engineering"
+};
+clone = JSON.parse(JSON.stringify(obj3));
+console.log(clone);
+
+// using Object.fromEntries() and Object.entries() (ES2019)
+
+const obj4 = {
+    name: "Tabitha",
+    school: "McGill University",
+    dept: "Aeronautics"
+};
+clone = Object.fromEntries(Object.entries(obj4));
+console.log(clone);
