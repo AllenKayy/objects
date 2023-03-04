@@ -98,3 +98,19 @@ const obj4 = {
 };
 clone = Object.fromEntries(Object.entries(obj4));
 console.log(clone);
+
+// question 5
+
+const presidentialCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar'
+  };
+  
+  for (const party in presidentialCandidates) {
+    const candidate = presidentialCandidates[party];
+    console.log(`${candidate} is the presidential candidate of ${party}`);
+  }
